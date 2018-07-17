@@ -1,0 +1,59 @@
+@import './base.scss';
+@import './font-awesome.scss';
+body{
+    background-color:#efefef; 
+    header{
+        height:50px;
+        padding-left: 1.5rem;
+        background-color: #36373C;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .section{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 50px;
+        bottom: 50px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        li{
+            height:50px;
+            background-color: #fff;
+            
+        }
+    }
+    .footer{
+        height:50px;
+        position:fixed;
+        bottom: 0;
+        //border: 1px solid red;
+        background-color:#fff; 
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        li{
+            flex: 1;
+            font-size:0.8rem;
+            text-align: center;
+            a{
+                height:100%;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                flex-direction:column;
+                color: #36373C;
+            }
+            span{margin-top:0.3rem;}
+        }
+        :first-child {
+            a{
+                color: #009688;
+            }
+           
+        }
+    }
+}
