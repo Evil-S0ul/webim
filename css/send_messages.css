@@ -3058,7 +3058,7 @@ li {
 }
 
 body {
-  background-color: #ededed;
+  background-color: #edededdc;
 }
 
 body header {
@@ -3085,6 +3085,117 @@ body header span {
 
 body header a {
   color: #fff;
+}
+
+body section {
+  padding: 0.5em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 50px;
+  overflow-y: auto;
+}
+
+body section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+body section li .header_img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 2rem;
+}
+
+body section li .header_img img {
+  width: 100%;
+  height: auto;
+}
+
+body section li .min_icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 0.8rem;
+  height: 0.8rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body section li .messages_content {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  line-height: 1rem;
+  min-height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.15rem;
+}
+
+body section .left_messages {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body section .left_messages .min_icon {
+  margin-top: 8px;
+  background: #7bd63a;
+  position: absolute;
+  right: 2.5em;
+  z-index: -1;
+}
+
+body section .left_messages .header_img {
+  margin-left: 5px;
+}
+
+body section .left_messages .messages_content {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body section .left_messages .messages_content span {
+  padding: 0.6rem;
+  background: #7bd63a;
+  border-radius: 0.1em;
+}
+
+body section .right_messages {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body section .right_messages .min_icon {
+  margin-top: 8px;
+  background: #fff;
+  position: absolute;
+  left: 2.5em;
+  z-index: -1;
+}
+
+body section .right_messages .header_img {
+  margin-right: 5px;
+}
+
+body section .right_messages .messages_content {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body section .right_messages .messages_content span {
+  padding: 0.6rem;
+  background: #fff;
+  border-radius: 0.1em;
 }
 
 body .footer {
