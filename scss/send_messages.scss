@@ -1,0 +1,60 @@
+@import './base.scss';
+@import './font-awesome.scss';
+body{
+     background-color:#ededed; 
+     header{
+        height:50px;
+        padding-left: 1.5rem;
+        background-color: #36373C;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        font-size: 1.2rem;
+        span{
+            font-size: 1rem;
+            margin-left:0.8rem; 
+        }
+        a{
+            color: #fff;
+        }
+    }
+    .footer{
+        height:40px;
+        position:fixed;
+        bottom: 0;
+        //border: 1px solid red;
+        background-color:#fff; 
+        border-top: 1px solid #ccc;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;  
+        padding: 5px 5px;
+        .left_input{
+            flex:6;
+            input{
+                border: none;
+                word-spacing: none;
+                display: block;
+                text-rendering: inherit;
+                border-bottom: 1px solid #ccc;
+                outline: 0px;
+                height:80%;
+                width:95%;
+                caret-color:#4eaa4c;
+                font-size: 1rem;
+            }
+        }
+        .right_btn{
+            flex:1.2;
+            button{
+                width:80%;
+                height:80%;
+                color: #fff;
+                background-color:#4eaa4c;
+                border: none; 
+            }
+        } 
+        
+    }
+}
